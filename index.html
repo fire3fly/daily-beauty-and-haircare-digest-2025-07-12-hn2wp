@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Beauty and Haircare Digest</title>
+    <meta name="description" content="Your Daily Dose of Beauty – Where Science Meets Self-Care">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="font-sans antialiased text-gray-900 bg-white">
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50" x-data="{ isOpen: false }">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold text-gray-800">Beauty Digest</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Benefits</a>
+                    <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">FAQ</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a>
+                </div>
+                <button class="md:hidden" @click="isOpen = !isOpen">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="md:hidden" x-show="isOpen" x-transition>
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#features" class="block px-3 py-2 text-gray-600 hover:text-gray-900">Features</a>
+                    <a href="#benefits" class="block px-3 py-2 text-gray-600 hover:text-gray-900">Benefits</a>
+                    <a href="#faq" class="block px-3 py-2 text-gray-600 hover:text-gray-900">FAQ</a>
+                    <a href="#contact" class="block px-3 py-2 text-gray-600 hover:text-gray-900">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pt-32 pb-24 bg-gradient-to-b from-pink-50 to-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">Daily Beauty and Haircare Digest</h2>
+                    <p class="text-xl md:text-2xl text-gray-600 mb-12">Your Daily Dose of Beauty – Where Science Meets Self-Care</p>
+                    <a href="https://essenceofaj.com/" class="inline-block bg-pink-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-pink-700 transform hover:scale-105 transition-all duration-300 shadow-lg">Start Your Beauty Journey</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-3xl font-bold text-center mb-16">Expert Beauty & Haircare Tips</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                        <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-4">Beauty Tips</h4>
+                        <p class="text-gray-600">Expert-curated beauty advice to enhance your natural features and boost confidence.</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                        <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-4">Haircare Tips</h4>
+                        <p class="text-gray-600">Professional haircare guidance for healthy, beautiful hair that turns heads.</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                        <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-4">Skincare Tips</h4>
+                        <p class="text-gray-600">Science-backed skincare routines for a radiant, healthy complexion.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-3xl font-bold text-center mb-16">Why Choose Us</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-4">Save Time & Money</h4>
+                        <p class="text-gray-600">Get expert advice that helps you make informed beauty decisions.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-4">Boost Confidence</h4>
+                        <p class="text-gray-600">Discover tips and tricks that enhance your natural beauty.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-4">Avoid Costly Mistakes</h4>
+                        <p class="text-gray-600">Learn from experts to prevent common beauty mishaps.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-24 bg-white" x-data="{selected:null}">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-3xl font-bold text-center mb-16">Frequently Asked Questions</h3>
+                <div class="max-w-3xl mx-auto space-y-4">
+                    <div class="border rounded-lg">
+                        <button class="w-full px-6 py-4 text-left focus:outline-none" @click="selected !== 1 ? selected = 1 : selected = null">
+                            <div class="flex items-center justify-between">
+                                <span class="font-semibold">How often should I update my skincare routine?</span>
+                                <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="px-6 pb-4" x-show="selected === 1" x-transition>
+                            <p class="text-gray-600">We recommend reviewing your skincare routine seasonally or when you notice significant changes in your skin's condition.</p>
+                        </div>
+                    </div>
+                    <!-- Add more FAQ items as needed -->
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-pink-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-3xl font-bold mb-8">Ready to Transform Your Beauty Routine?</h3>
+                <p class="text-xl text-gray-600 mb-12">Join our community of beauty enthusiasts and get daily tips delivered to your inbox.</p>
+                <a href="https://essenceofaj.com/" class="inline-block bg-pink-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-pink-700 transform hover:scale-105 transition-all duration-300 shadow-lg">Get Started Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Daily Beauty Digest</h4>
+                    <p class="text-gray-400">Your trusted source for beauty and haircare advice.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Contact</h4>
+                    <p class="text-gray-400">Email: ctstarmedia@gmail.com</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Daily Beauty and Haircare Digest. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
